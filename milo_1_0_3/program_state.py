@@ -59,7 +59,9 @@ class ProgramState:
         self.random = rng.RandomNumberGenerator()
 
         # Program information
-        self.program_id = enums.ProgramID.GAUSSIAN_16
+        #self.program_id = enums.ProgramID.GAUSSIAN_16
+        self.program_id = enums.ProgramID.ORCA_5
+        self.orca_path = None
         self.gaussian_header = None  # "m06 6-31g(d,p)"
         self.gaussian_footer = None
         self.processor_count = None

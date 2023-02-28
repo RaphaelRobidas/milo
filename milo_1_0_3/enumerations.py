@@ -112,6 +112,7 @@ class ProgramID(Enum):
     G16 = 1  # Creates an alias for GAUSSIAN_16
     GAUSSIAN_09 = 2
     G09 = 2
+    ORCA_5 = 3
 
 
 class PropagationAlgorithm(Enum):

@@ -44,6 +44,7 @@ parameters_with_defaults = {
     "oscillator_type": "quasiclassical",
     "geometry_displacement": "off",
     "rotational_energy": "off",
+    "orca_path": "",
 }
 
 
@@ -364,6 +365,11 @@ class JobSection():
     def gaussian_header(options, program_state):
         """Populate program_state.gaussian_header from options."""
         program_state.gaussian_header = options
+
+    @staticmethod
+    def orca_path(options, program_state):
+        """Populate program_state.gaussian_header from options."""
+        program_state.orca_path = options
 
     @staticmethod
     def gaussian_footer(options, program_state):
