@@ -373,8 +373,8 @@ def generate(program_state):
               f"{program_state.energy_boost_max} kcal/mol.")
         print()
         if program_state.energy_boost_max < total_zpe.as_kcal_per_mole(0):
-            raise exceptions.InputError("Energy Boost max energy is less than "
-                                        "ZPE.")
+            raise exceptions.InputError(f"Energy Boost max energy is less than "
+                                        f"ZPE. ({total_zpe.as_kcal_per_mole(0)})")
         print("  Attempt   Vibrational Energy (kcal/mol)   Temperature (K)")
         print("  ---------------------------------------------------------")
         i = 1
